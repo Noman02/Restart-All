@@ -30,8 +30,28 @@ function paperRequirments(firstBook, secondBook, thirdBook) {
     const thirdBookCopy = thirdBookPage * thirdBook;
 
     const totalPages = firstBookCopy + secondBookCopy + thirdBookCopy;
-    return totalPages;
+    // return totalPages;
 }
 
 const printBook = paperRequirments(10, 0, 0);
-console.log(printBook);
+// console.log(printBook);
+
+
+
+// find bigest name
+const friends = ["roky", "anamul", "noman", "mahir", "mehran mahi", "samir"]
+
+function bestFriend(bigFriend) {
+    let bigest = bigFriend[0];
+    for (let i = 0; i < bigFriend.length; i++) {
+        const index = i;
+        const element = bigFriend[index];
+        if (element > bigest) {
+            bigest = element;
+        }
+
+    }
+    return bigest;
+}
+const checkBigest = bestFriend(friends);
+console.log(checkBigest);
